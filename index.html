@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mainCss/main.css">
+    <title>Christian Mosquera</title>
+    <style>
+        .home-section{
+            
+            background-image: url("images/code.jpg");
+            
+        }
+    </style>
+</head>
+<body>
+    <section id="home" class="home-section">
+        <div class="home-container">
+            
+            <div class="upper">
+                <h1>Hi, I'm Christian Mosquera <br> I'm a computer science major</h1>
+            </div>
+            <div class="lower">
+                <button onclick="document.location='#about'" class="check">
+                    <div>
+                        Check out my work
+                    </div>
+                </button>                
+            </div>
+
+        </div>
+    </section>
+    <section class="nav-bar">
+        <div class="nav-container">
+            <img class="menu" onclick="myFunction()" src="images/icons8-menu.svg" alt="">
+        </div>
+        
+        <nav  id="mobile" class="mobile-menu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+            </ul>
+        </nav>
+        
+    </section>
+    <section id="about" class="about-section">
+        
+        <h1 class="header">About</h1>
+        
+        <div class="about-container">
+
+            <div class="about-left">
+                <img class="me" src="images/squarepic.jpg" alt="picture of me">
+                <div class="image-overlay">
+                    <h1>Me at Big Bend</h1>
+                </div>
+            </div>
+            <div class="about-right">
+                <h3>About me</h3>
+                <p>I am currently enrolled at Texas A&M University as a computer science major. I am also in the Corps of Cadets at Texas A&M.
+                      I am learning many different skills in software engineering, I am currently teaching myself HTML, CSS, JavaScript, and C++. 
+                     Later this coming semester I will be learning C++ in class, but I will still be teaching myself HTML, CSS, and JavaScript. This is my first project and my first website. I 
+                     enjoy hiking, camping, financial planning, traveling, and learning new skills to develp myself as a software engineer. I plan on 
+                     making more projects in the future, both inside and outside of class, and will put them on here. For now this is all I have!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="education-section">
+        <h1>Education</h1>
+        <div class="education-container">
+            <h3>Texas A&M Univeristy</h3>
+            <h5>Bachelor of Science - Computer Science</h5>
+            <p>I am currently studying computer science at Texas A&M university. I am entering my sophomore year, and will be 
+                starting my first programming courses this coming fall. I will be graduating in 2024.
+            </p>        
+            <button onclick="window.location.href='https://catalog.tamu.edu/undergraduate/engineering/computer-science/bs/#programrequirementstext';" class="check">
+                <div>
+                    Check out the program
+                </div>
+            </button>  
+        </div>
+
+    </section>
+
+    <section id="experience" class="experience-section">
+        <h1>Work Experience</h1>
+        <div class="experience-container">
+
+            <h3>IT Internship</h3>
+            <h5>AES Drilling Fluids</h5>
+            <p>While at AES Drilling Fluids , I was able to work with all aspects involving IT. This was my first internship, so my manager 
+                decided to let me help in each department to get a better understanding of how a company functions. I was able to work with 
+                networking, software development, and technical support. While there I was able to look at the companies data center and server's,
+                 help with internal software development, and build laptops and desktops for office and field use.
+            </p>
+            <h6>Period: May 2021 - August 2021</h6>
+            <button onclick="window.location.href='https://www.aesfluids.com/';" class="check">
+                <div>
+                    Check out the company
+                </div>
+            </button>
+        </div>
+         
+    </section>
+
+    <section id="portfolio" class="portfolio-section">
+        <h1 class="port-header">Portfolio</h1>
+        <div class="portfolio-container">
+            
+            <div class="img-container">
+                <div class="web">
+                    <img class="website" src="images/squareWeb.png" alt="">
+                    <button onclick="window.location.href='https://catalog.tamu.edu/undergraduate/engineering/computer-science/bs/#programrequirementstext';" class="web-image-overlay myweb">
+                        <h1>My website</h1>
+                    </button>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div>
+            <ul>
+                <li><a href="https://www.instagram.com/the.official_christian/"><img class="insta" src="images/SeekPng.com_instagram-png-logo_26435.png" alt=""></a></li>
+                <li><a href="https://github.com/christianMosquera"><img class="git" src="images/GitHub-Mark-Light-64px.png" alt=""></a></li>
+                <li><a href="https://www.linkedin.com/in/christian-mosquera-58b1311b7/"><img class="in" src="images/pngegg.png" alt=""></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("mobile");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+            x.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
